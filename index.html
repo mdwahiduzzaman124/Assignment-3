@@ -30,77 +30,51 @@
   <body>
     <header>
       <nav>
-        <div class="navbar bg-base-100 lg:px-48 pt-9">
-          <div class="navbar-left lg:hidden">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h7"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a class="text-[#ff4240]">Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-[90%] max-sm:top-[80%] max-sm:left-[35%] gap-4"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
             </div>
           </div>
-
-          <div class="navbar-start">
-            <h1 class="text-4xl font-extrabold">
-              Hockey<span class="text-[#FF4240]">’</span>s
-            </h1>
-          </div>
-
-          <div class="navbar-center max-sm:hidden">
-            <ul class="flex gap-11">
-              <li><a class="text-[#FF4240] font-bold text-base">Home</a></li>
-              <li><a class="font-bold text-base">About</a></li>
-              <li><a class="font-bold text-base">Pages</a></li>
-              <li><a class="font-bold text-base">Blog</a></li>
-              <li><a class="font-bold text-base">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle max-sm:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
-
-            <button
-              class="btn btn-primary bg-[#FF4240] border-0 font-bold text-xl text-[#fff] hover:bg-gray-400"
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full rounded-3xl"
+            />
+            <div
+              class="absolute flex transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-[90%] max-sm:top-[80%] max-sm:left-[35%] gap-4"
             >
-              Get Ticket
-            </button>
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full rounded-3xl"
+            />
+            <div
+              class="absolute flex transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-[90%] max-sm:top-[80%] max-sm:left-[35%] gap-4"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full rounded-3xl"
+            />
+            <div
+              class="absolute flex transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-[90%] max-sm:top-[80%] max-sm:left-[35%] gap-4"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+            </div>
           </div>
         </div>
       </nav>
